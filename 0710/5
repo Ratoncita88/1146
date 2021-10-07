@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>objects, methods</title>
+        
+        <script>
+
+ let str = 'abcdabcdef';
+ /*let b = str.substr(4,5); // от  4 5 символов
+ let a = str.substring(4,5);// 4 и 5*/
+ 
+ let revstr1 = '';
+ // переворот строки вар 1
+ for (let i = 0; i < str.length; i++) {
+	revstr1 += str[str.length - 1 -i];// с конца
+ }
+ // переворот строки вар 2
+ 
+ let revstr2 = str.split('').reverse().join(''); //создали массив+переворот
+
+	let arr1 = [1,2,4,77,32,0,23,16,9,10];
+	let arr2 = arr1.map(item => 100 - item);
+	
+	let arr3 = arr1.filter(item => item >9);
+	
+	// let arr3 = arr1.filter(function (item) {
+		//return (item >9);});
+	console.log(arr1);
+	console.log(arr2);
+	console.log(arr3);
+	
+	let res = arr1.reduce((sum,item) => sum + item, 0);
+	console.log(res);
+
+	</script>
+    </head>
+    <body>
+        
+    </body>
+</html>

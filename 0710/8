@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Циклы</title>
+        
+        <script>
+			// запрашивает больше 100 пока не введем
+			/*let num;
+			do {
+				num = prompt("Введите число, большее 100?", 0);
+			}  while (num <= 100 && num);*/
+			let a = 2 + 2;
+
+				switch (a) {
+				  case 3:
+					alert( 'Маловато' );
+				  case 4:
+					alert( 'В точку!' );
+				  case 5:
+					alert( 'Перебор' );
+				  default:
+					alert( "Нет таких значений" );
+				}
+		</script>
+    </head>
+    <body>
+        
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Function</title>
+        
+        <script>
+				/*function myFunc1() {
+				alert('Я функция!');
+				}
+				myFunc1();*/
+		// Сумма чисел		
+		/*function summa(x,y) {
+			let sum = x + y;
+			return sum;
+		}
+		let a = 2, b = 4;
+		let c = 3, d = 4;
+
+		//alert(summa (a,b));	
+		console.log(summa (c,d));	*/
+
+		// Произведение чисел
+			/*function multi(x,y) {
+			if ((typeof x != 'number') || (typeof y != 'number') || isNaN(x) || isNaN(y)) return 'Wrong!!!';
+			
+			return x * y;
+		}
+		let a = 2, b = 4;
+		let c = 'sdf', d = 10;
+
+		console.log(multi (c,d));	*/
+		
+//факториал
+function fact(n) {
+	if ((typeof n == 'number') && (n > 0) && (Math.floor(n) == n)) {
+		let res = 1;
+		for (let i = 1; i <=n; i++){
+			res = res * i;
+		}
+		return res;
+	} else {
+		return 'Wrong!!!';
+	}
+}
+		</script>
+    </head>
+    <body>
+        
+    </body>
+</html>

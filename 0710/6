@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Часовой</title>
+        
+        <script>
+				function parole(password) {
+					for (let i = 1; i < 4; i++){
+						if (password === prompt('Пароль?')){
+							alert( 'Пароль принят! Вход свободен' );
+							return;
+						}
+					}
+					alert( 'Повторите попытку' );
+				return;
+				}
+					
+		 parole ('12345')
+				
+				
+		   
+		</script>
+    </head>
+    <body>
+        
+    </body>
+</html>

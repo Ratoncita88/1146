@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Arrays </title>
+        
+        <script>
+
+	let source = [1, 3, 9, 3, 12, 16, 5, 2, 0, 9];
+	
+	
+	let max = getMaxValue(source);
+	let min = getMinValue(source);
+	
+	function getMaxValue(source){
+    let max = source[0]; 
+    for (let i = 0; i < source.length; i++) { 
+       
+        if (max < source[i]) max = source[i]; 
+    }
+    
+    return max;
+	}	
+
+	function getMinValue(source){
+    let min = source[0];
+    for (let i = 0; i < source.length; i++) {
+        if (min > source[i]) min = source[i];
+    }
+    return min;
+}
+		
+console.log(max);
+console.log(min);
+
+	</script>
+    </head>
+    <body>
+        
+    </body>
+</html>
