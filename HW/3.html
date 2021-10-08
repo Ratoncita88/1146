@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Игра в загадки </title>
+        
+        <script>
+		
+		
+let guess = [
+'Сто одежек и все без застежек?', 
+'Зеленый и живой?', 
+'Без окон, без дверей полна горница людей?'];
+
+
+let ans = ['капуста', 'лук', 'салат'];
+let ans1= ['крокодил', 'лягушка', 'ящерица'];
+let ans2= ['огурец', 'кабачок',  'баклажан'];
+
+console.log(ans);
+console.log(ans1);
+console.log(ans2);
+
+if (confirm("Хотите поиграть?")) {
+	let x = 0;
+	alert("Поехали!!");
+	
+	
+	for (let i = 0; i < ans.length; i++){
+		let zag1 = prompt (guess[0]);
+		if (zag1 == ans[i])
+		{
+		x++;
+		alert('Верно! Перейдем к следующей загадке')
+		}
+		else
+		{
+		alert('Не верно! Перейдем к следующей загадке')
+		}
+		
+	}
+	for (let i = 0; i < ans1.length; i++){
+		let zag2 = prompt (guess[1]);
+		if (zag2 = ans1[i])
+		{
+		x++;
+		alert('Верно! Перейдем к следующей загадке')
+		}
+		else
+		{
+		alert('Не верно! Перейдем к следующей загадке')
+		}
+	}
+	for (let i = 0; i < ans2.length; i++){
+		let zag3 = prompt (guess[2]);
+		if (zag3 = ans2[i])
+		{
+		x++;
+		alert('Верно! Перейдем к следующей загадке')
+		}
+		else
+		{
+		alert('Не верно! Перейдем к следующей загадке')
+		}
+	}
+	alert('Ты молодец! У тебя правильных ответов ' + x);	
+
+
+} else {
+
+  alert("Пока")
+
+}
+
+</script>
+    </head>
+    <body>
+        
+    </body>
+</html>
