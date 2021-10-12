@@ -14,60 +14,70 @@ let guess = [
 'Без окон, без дверей полна горница людей?'];
 
 
-let ans = ['капуста', 'лук', 'салат'];
-let ans1= ['крокодил', 'лягушка', 'ящерица'];
-let ans2= ['огурец', 'кабачок',  'баклажан'];
+let ans = [
+['капуста', 'лук', 'салат'],
+['крокодил', 'лягушка', 'ящерица'],
+['огурец', 'кабачок',  'баклажан'],
+];
 
 console.log(ans);
-console.log(ans1);
-console.log(ans2);
+
 
 if (confirm("Хотите поиграть?")) {
 	let x = 0;
 	alert("Поехали!!");
+	let flag = false;
 	
-	
-	for (let i = 0; i < ans.length; i++){
-		let zag1 = prompt (guess[0]);
-		if (zag1 == ans[i])
-		{
+	let zag1 = prompt (guess[0]);
+	for (let i = 0; i < ans[0].length; i++){
+		if (zag1 == ans[0][i]){
+		flag = true;
+		break;
+		}
+	}
+	if (flag) {
+		alert('Верно! Перейдем к следующей загадке');
+		flag = false;
 		x++;
-		alert('Верно! Перейдем к следующей загадке')
-		}
-		else
-		{
-		alert('Не верно! Перейдем к следующей загадке')
-		}
+	}else{
+		alert('Не верно! Перейдем к следующей загадке');
+	}
 		
+	let zag2 = prompt (guess[1]);
+	for (let i = 0; i < ans[1].length; i++){
+		if (zag2 = ans[1][i]){
+		flag = true;
+		break;
+		}
 	}
-	for (let i = 0; i < ans1.length; i++){
-		let zag2 = prompt (guess[1]);
-		if (zag2 = ans1[i])
-		{
+	if (flag) {
+		alert('Верно! Перейдем к следующей загадке');
+		flag = false;
 		x++;
-		alert('Верно! Перейдем к следующей загадке')
-		}
-		else
-		{
-		alert('Не верно! Перейдем к следующей загадке')
+	}else{
+		alert('Не верно! Перейдем к следующей загадке');
+	}
+	
+	let zag3 = prompt (guess[2]);
+	for (let i = 0; i < ans[2].length; i++){
+		if (zag3 = ans[2][i]){
+		flag = true;
+		break;
 		}
 	}
-	for (let i = 0; i < ans2.length; i++){
-		let zag3 = prompt (guess[2]);
-		if (zag3 = ans2[i])
-		{
+	if (flag) {
+		alert('Верно! Перейдем к следующей загадке');
+		flag = false;
 		x++;
-		alert('Верно! Перейдем к следующей загадке')
-		}
-		else
-		{
-		alert('Не верно! Перейдем к следующей загадке')
-		}
-	}
-	alert('Ты молодец! У тебя правильных ответов ' + x);	
+	}else{
+		alert('Не верно! Перейдем к следующей загадке');
+	}	
+		
+
+alert('Ты молодец! У тебя правильных ответов ' + x);	
 
 
-} else {
+}else {
 
   alert("Пока")
 
